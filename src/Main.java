@@ -8,7 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         // Book b1= new Book("Earthlings","Sayaka Murata",2021,false){}; This was just a test. (Yes the book does exist
-        System.out.println("Welcome to our Library!\n");
+        System.out.println("\nWelcome to our Library!\n");
+        System.out.println("----------------------------------------\n"); // formating :)
 
         //Start page with the execution options
         System.out.println("""
@@ -20,7 +21,7 @@ public class Main {
                 5. Return a book
                 6. Exit""");
 
-        //Introducing user input
+        //Introducing user input !!!! USE A LOOP WITH RINNING = TRUE, IFF EXIT, THEN RUNNING = FALSE -> LEAVE PROGRAM
         Scanner scanner = new Scanner(System.in);
         int userChoice = scanner.nextInt();
         System.out.println(userChoice); // control test
