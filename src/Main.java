@@ -19,5 +19,22 @@ public class Main {
                 4. Borrow a book
                 5. Return a book
                 6. Exit""");
+
+        //Introducing user input
+        Scanner scanner = new Scanner(System.in);
+        int userChoice = scanner.nextInt();
+        System.out.println(userChoice); // control test
+        System.out.println("----------------------------------------\n"); // formating :)
+
+        //Using user input to determine action (still not ready, here we introduce our methods. But i'll try and work on it tomorrow)
+        switch(userChoice){
+            case 1 -> System.out.println(userChoice);
+            case 2 -> System.out.println(userChoice);
+            case 3 -> System.out.println(userChoice);
+            case 4 -> System.out.println(userChoice);
+            case 5 -> System.out.println(userChoice);
+            case 6 -> System.out.println(userChoice);
+            default -> System.out.println(userChoice);
+        }
     }
 }
