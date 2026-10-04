@@ -1,17 +1,15 @@
 public class Book {
 
-    private String Title;
-    private String Author;
-    private int Year;
-    private boolean Borrowed;
+    private String title;
+    private String author;
+    private int year;
+    private boolean borrowed;
 
-    public Book(String Title, String Author,int Year, boolean Borrowed){
-        this.Title= Title;
-        this.Author= Author;
-        this.Year= Year;
-        this.Borrowed= Borrowed;
-
-
+    public Book(String title, String author,int year, boolean borrowed){
+        this.title= title;
+        this.author= author;
+        this.year= year;
+        this.borrowed= false;// cos the book is usually available
     }
 
 

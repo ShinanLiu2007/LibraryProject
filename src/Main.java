@@ -5,6 +5,24 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
+    private static ArrayList<Book> bookList= new ArrayList<>();
+    private static Scanner scanner = new Scanner(System.in);
+
+
+    public static void addBook(){
+        System.out.println("For adding a book please have the title, author and release year ready");
+        System.out.println("Enter the title:");
+        String title= scanner.nextLine();
+        System.out.println("Enter the author(FIRST name, LAST name):");
+        String author= scanner.nextLine();
+        System.out.println("Enter the release year:");
+        int year= scanner.nextInt();
+        boolean borrowed= false;
+        Book newBook= new Book(title,author,year,borrowed);
+        bookList.add(newBook);
+        }
+
+
     public static void main(String[] args) {
 
         // Book b1= new Book("Earthlings","Sayaka Murata",2021,false){}; This was just a test. (Yes the book does exist
@@ -18,7 +36,7 @@ public class Main {
         while (running){ //because we only want to exit once the user presses 6, we need a loop to keep giving them an option to chose from
             //Start page with the execution options
             System.out.println("""
-                Please choose one of the following otions:
+                Please choose one of the following options:
                 1. Add a book
                 2. Show all books
                 3. Search for a book
